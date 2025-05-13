@@ -53,9 +53,9 @@ function provideFeedback() {
     if (amount < 75) {
       feedback += `<li style="color: red;">${category} heeft te weinig middelen. Dit kan leiden tot problemen.</li>`;
     } else if (amount > 150) {
-      feedback += `<li style="color: red;">${category} heeft veel middelen gekregen. Dit is positief, maar het kan tekorten veroorzaken in andere sectoren.</li>`;
+      feedback += `<li style="color: green;">${category} heeft veel middelen gekregen. Dit is positief, maar het kan tekorten veroorzaken in andere sectoren.</li>`;
     } else {
-      feedback += `<li style="color: green;">${category} heeft een gebalanceerd budget.</li>`;
+      feedback += `<li style="color: black;">${category} heeft een gebalanceerd budget.</li>`;
     }
   });
   feedback += '</ul>';
