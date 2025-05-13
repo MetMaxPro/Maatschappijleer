@@ -37,7 +37,7 @@ label {
 
 input[type="range"] {
   width: 100%;
-  color: orange;
+  accent-color: #ff3e00;
 }
 
 span {
