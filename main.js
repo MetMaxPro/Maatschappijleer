@@ -50,9 +50,9 @@ function provideFeedback() {
 
   let feedback = '<h3>Feedback:</h3><ul>';
   Object.entries(allocations).forEach(([category, amount]) => {
-    if (amount < 75) {
+    if (amount < 50) {
       feedback += `<li style="color: red;">${category} heeft te weinig middelen. Dit kan leiden tot problemen.</li>`;
-    } else if (amount > 150) {
+    } else if (amount > 130) {
       feedback += `<li style="color: green;">${category} heeft veel middelen gekregen. Dit is positief, maar het kan tekorten veroorzaken in andere sectoren.</li>`;
     } else {
       feedback += `<li style="color: black;">${category} heeft een gebalanceerd budget.</li>`;
