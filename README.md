@@ -1,3 +1,2 @@
 # Minister Der Sociale Zaken
-https://metmaxpro.github.io/Maatschappijleer/
-# Van Daniel & Mathijs
+Van Daniel & Mathijs - https://metmaxpro.github.io/Maatschappijleer/
