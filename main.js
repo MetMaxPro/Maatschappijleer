@@ -5,7 +5,7 @@ const budgetLeftDisplay = document.getElementById('budget-left');
 const feedbackDiv = document.getElementById('feedback');
 const submitButton = document.getElementById('submit-button');
 
-let totalBudget = 100;
+let totalBudget = 457;
 
 // Update remaining budget and slider values
 function updateBudget() {
@@ -43,16 +43,16 @@ function provideFeedback() {
   });
 
   if (totalUsed !== totalBudget) {
-    feedbackDiv.innerHTML = `<p style="color: red;">Je hebt niet precies €100 miljoen verdeeld! Je hebt €${totalUsed} miljoen gebruikt.</p>`;
+    feedbackDiv.innerHTML = `<p style="color: red;">Je hebt niet precies €457 miljard verdeeld! Je hebt €${totalUsed} miljoen gebruikt.</p>`;
     feedbackDiv.classList.remove('hidden');
     return;
   }
 
   let feedback = '<h3>Feedback:</h3><ul>';
   Object.entries(allocations).forEach(([category, amount]) => {
-    if (amount < 15) {
+    if (amount < 75) {
       feedback += `<li>${category} heeft te weinig middelen. Dit kan leiden tot problemen.</li>`;
-    } else if (amount > 40) {
+    } else if (amount > 150) {
       feedback += `<li>${category} heeft veel middelen gekregen. Dit is positief, maar overweeg ook andere sectoren.</li>`;
     } else {
       feedback += `<li>${category} heeft een gebalanceerd budget.</li>`;
