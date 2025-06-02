@@ -95,7 +95,7 @@ function provideFeedback() {
 
 });
 
-feedback += '</ul>';
+feedback += '</ul><h3>Overheid</h3><ul><li style="color: black;"><strong>Onderwijs, Cultuur en Wetenschap:</strong> 53,4 miljard</li><li style="color: black;"><strong>Zorg:</strong> 114,6 miljard</li><li style="color: black;"><strong>Sociale Zekerheid</strong> 114,9 miljard</li><li style="color: black;"><strong>Gemeente- en Provinciefonds:</strong> 53,4 miljard</li><li style="color: black;"><strong>Defensie, Justitie en Veiligheid:</strong> 43,3 miljard</li>';
 
   feedbackDiv.innerHTML = feedback;
   feedbackDiv.classList.remove('hidden');
