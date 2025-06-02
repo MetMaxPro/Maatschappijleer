@@ -50,19 +50,19 @@ function provideFeedback() {
   Object.entries(allocations).forEach(([category, amount]) => {
   if (amount < 50) {
     switch (category) {
-      case 'education':
+      case 'Onderwijs, Cultuur en Wetenschap':
         feedback += `<li style="color: red;">Onderwijs, Cultuur en Wetenschap zijn ondergefinancierd. Dit kan de kwaliteit van het onderwijs be&#xefnvloeden.</li>`;
         break;
-      case 'healthcare':
+      case 'Zorg':
         feedback += `<li style="color: red;">Zorg krijgt te weinig. Dit kan leiden tot langere wachttijden en verminderde zorg.</li>`;
         break;
-      case 'social-security':
+      case 'Sociale Zekerheid':
         feedback += `<li style="color: red;">Sociale Zekerheid krijgt te weinig. Dit kan leiden tot lagere uitkeringen en minder ondersteuning voor kwetsbare groepen.</li>`;
         break;
-      case 'housing':
+      case 'Gemeente- en Provinciefonds':
         feedback += `<li style="color: red;">De Gemeenten en Provincies krijgen te weinig. Dit kan leiden tot achterstallig onderhoud en verminderde lokale dienstverlening.</li>`;
         break;
-      case 'integration':
+      case 'Defensie, Justitie en Veiligheid':
         feedback += `<li style="color: red;">Defensie, Justitie en Veiligheid zijn ondergefinancierd. Dit kan nationale veiligheid be&#xefnvloeden.</li>`;
         break;
       default:
@@ -71,19 +71,19 @@ function provideFeedback() {
   } else if (amount > 130) {
     color = 'green';
     switch (category) {
-     case 'education':
+     case 'Onderwijs, Cultuur en Wetenschap':
         feedback += `<li style="color: green;">Onderwijs, Cultuur en Wetenschap krijgen veel middelen. Dit biedt kansen voor innovatie en betere faciliteiten.</li>`;
         break;
-      case 'healthcare':
+      case 'Zorg':
         feedback += `<li style="color: green;">Zorg heeft ruim voldoende middelen. Dit verhoogt de kwaliteit van zorg.</li>`;
         break;
-      case 'social-security':
+      case 'Sociale Zekerheid':
         feedback += `<li style="color: green;">Sociale Zekerheid krijgt ruim voldoende middelen. Dit versterkt de bestaanszekerheid, maar de hoge uitgaven moeten wel op lange termijn houdbaar blijven.</li>`;
         break;
-      case 'housing':
+      case 'Gemeente- en Provinciefonds':
         feedback += `<li style="color: green;">De Gemeenten en Provincies ontvangen veel middelen. Dit kan zorgen voor verbeterde infrastructuur en extra lokale voorzieningen, maar kan ook leiden tot ineffici&#235nte besteding</li>`;
         break;
-      case 'integration':
+      case 'Defensie, Justitie en Veiligheid':
         feedback += `<li style="color: green;">Defensie, Justitie en Veiligheid krijgen veel. Dit versterkt de nationale veiligheid, maar gaat mogelijk ten koste van andere sectoren.</li>`;
         break;
       default:
