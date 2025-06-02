@@ -103,4 +103,4 @@ feedback += '</ul>';
 
 submitButton.addEventListener('click', provideFeedback);
 
-updateBudget();z
+updateBudget();
