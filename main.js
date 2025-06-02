@@ -43,7 +43,7 @@ function provideFeedback() {
   });
 
   if (totalUsed !== totalBudget) {
-    feedbackDiv.innerHTML = `<p style="color: red;">Je hebt niet precies €457 miljard verdeeld! Je hebt €${totalUsed} miljoen gebruikt.</p>`;
+    feedbackDiv.innerHTML = `<p style="color: red;">Je hebt niet precies €457 miljard verdeeld! Je hebt €${totalUsed} miljard gebruikt.</p>`;
     feedbackDiv.classList.remove('hidden');
     return;
   }
