@@ -28,7 +28,6 @@ sliders.forEach(slider => {
   slider.addEventListener('input', updateBudget);
 });
 
-// Provide feedback
 function provideFeedback() {
   let totalUsed = 0;
   const allocations = {};
